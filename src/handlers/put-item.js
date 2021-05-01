@@ -38,7 +38,7 @@ exports.putItemHandler = async (event) => {
     // https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB/DocumentClient.html#put-property
     const params = {
         TableName: tableName,
-        Item: { id,name,apartmentName, userName,phoneNumber,emailId },
+        Item: { id,name,apartmentName, userName,phoneNumber,emailId }
     };
    
     await docClient.put(params).promise();
