@@ -20,7 +20,7 @@ exports.putItemHandler = async (event) => {
     // https://docs.aws.amazon.com/lambda/latest/dg/nodejs-prog-model-logging.html
     console.log('received:', JSON.stringify(event));
 
-    /*Get id and name from the body of the request
+    //Get id and name from the body of the request
     const { id, name } = JSON.parse(body);
 
     // Creates a new item, or replaces an old item with a new item
@@ -29,8 +29,8 @@ exports.putItemHandler = async (event) => {
         TableName: tableName,
         Item: { id, name },
     };
-    */
     
+  /*  
     // Get id and name from the body of the request
     const { id,apartmentName, userName,phoneNumber,emailId } = JSON.parse(body);
 
@@ -40,7 +40,7 @@ exports.putItemHandler = async (event) => {
         TableName: tableName,
         Item: { id,apartmentName, userName,phoneNumber,emailId },
     };
-    
+    */
     await docClient.put(params).promise();
 
     const response = {
