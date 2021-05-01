@@ -19,7 +19,7 @@ exports.putItemHandler = async (event) => {
     // All log statements are written to CloudWatch by default. For more information, see
     // https://docs.aws.amazon.com/lambda/latest/dg/nodejs-prog-model-logging.html
     console.log('received:', JSON.stringify(event));
-
+/*
     //Get id and name from the body of the request
     const { id, eId } = JSON.parse(body);
 
@@ -29,8 +29,8 @@ exports.putItemHandler = async (event) => {
         TableName: tableName,
         Item: { id, eId },
     };
-    
-  /*
+  */  
+  
     // Get id and name from the body of the request
     const { id,name,apartmentName, userName,phoneNumber,eId } = JSON.parse(body);
 
@@ -40,7 +40,7 @@ exports.putItemHandler = async (event) => {
         TableName: tableName,
         Item: { id,name,apartmentName, userName,phoneNumber,eId }
     };
-   */
+   
     await docClient.put(params).promise();
 
     const response = {
