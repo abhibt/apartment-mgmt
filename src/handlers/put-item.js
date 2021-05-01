@@ -29,7 +29,7 @@ exports.putItemHandler = async (event) => {
         TableName: tableName,
         Item: { id, eId },
     };
-  */  
+   */  
   
     // Get id and name from the body of the request
     const { id,name,apartmentName, userName,phoneNumber,eId } = JSON.parse(body);
