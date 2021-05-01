@@ -120,5 +120,5 @@ Resources:
         Name: id
         Type: String
       ProvisionedThroughput:
-        ReadCapacityUnits: 7
-        WriteCapacityUnits: 7
+        ReadCapacityUnits: 12
+        WriteCapacityUnits: 12
