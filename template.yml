@@ -121,4 +121,4 @@ Resources:
         Type: String
       ProvisionedThroughput:
         ReadCapacityUnits: 12
-        WriteCapacityUnits: 12
+        WriteCapacityUnits: 15
